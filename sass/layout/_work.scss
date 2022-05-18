@@ -1,0 +1,45 @@
+.section__novpading-top {
+  padding-top: 0;
+}
+
+.works {
+  display: flex;
+}
+
+.works__item {
+  position: relative;
+
+  width: 370px;
+  height: 294px;
+}
+
+.works__container {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+
+  width: 370px;
+  height: 70px;
+
+  background: var(--linear-gradient-color);
+}
+
+.works__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+
+  color: var(--text-white-color);
+}
+
+.works__item {
+  margin-left: 30px;
+  &:first-child {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- heder -->
+    <header class="page-header">
+      <div class="page-header__main container">
+        <nav class="page-header__nav">
+          <a href="" class="logo"
+            >Web<span class="logo__dark">Studio</span></a
+          >
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Студия</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link site-nav__link__current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="auth-nav list">
+          <li class="auth-nav__item">
+            <a href="mailto:info@devstudio.com" class="auth-nav__link">
+              <svg class="auth-nav__envelope">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="auth-nav__item">
+            <a href="tel:+380961111111" class="auth-nav__link">
+              <svg class="auth-nav__smartphone">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Фільтер по сторінці</h1>
+
+          <!-- Навігація фільтра -->
+          <ul class="navigation-list list">
+            <li class="navigation-item">
+              <button type="button" class="navigation-button">Все</button>
+            </li>
+            <li class="navigation-item">
+              <button type="button" class="navigation-button">Веб-сайты</button>
+            </li>
+            <li class="navigation-item">
+              <button type="button" class="navigation-button">
+                Приложения
+              </button>
+            </li>
+            <li class="navigation-item">
+              <button type="button" class="navigation-button">Дизайн</button>
+            </li>
+            <li class="navigation-item">
+              <button type="button" class="navigation-button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <!-- Фільтер -->
+          <ul class="filter-list list">
+            <li class="filter-item">
+              <a href="" class="filter-link">
+                <div class="filter-images">
+                  <img
+                    src="./images/k-1.jpg"
+                    alt="Технокряк"
+                    width="370"
+                    class="filter-img"
+                  />
+
+                  <div class="filter-overlay">
+                    <p class="filter-images-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="filter-container">
+                  <h2 class="filter-title">Технокряк</h2>
+                  <p class="filter-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="filter-item">
+              <a href="" class="filter-link">
+                <div class="filter-images">
+                  <img
+                    src="./images/k-2.jpg"
+                    alt="Дизайн"
+                    width="370"
+                    class="filter-img"
+                  />
+                  <div class="filter-overlay">
+                    <p class="filter-images-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="filter-container">
+                  <h2 class="filter-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="filter-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="filter-item">
+              <a href="" class="filter-link">
+                <div class="filter-images">
+                  <img
+                    src="./images/k-3.jpg"
+                    alt="Приложение"
+                    width="370"
+                    class="filter-img"
+                  />
+                  <div class="filter-overlay">
+                    <p class="filter-images-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="filter-container">
+                  <h2 class="filter-title">Ресторан Seafood</h2>
+                  <p class="filter-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="filter-item">
+              <a href="" class="filter-link">
+                <div class="filter-images">
+                  <img
+                    src="./images/k-4.jpg"
+                    alt="Маркетинг"
+                    width="370"
+                    class="filter-img"
+                  />
+                  <div class="filter-overlay">
+                    <p class="filter-images-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="filter-container">
+                  <h2 class="filter-title">Проект Prime</h2>
+                  <p class="filter-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="filter-item">
+              <a href="" class="filter-link">
+                <div class="filter-images">
+                  <img
+                    src="./images/k-5.jpg"
+                    alt="Приложение"
+                    width="370"
+                    class="filter-img"
+                  />
+                  <div class="filter-overlay">
+                    <p class="filter-images-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="filter-container">
+                  <h2 class="filter-title">Проект Boxes</h2>
+                  <p class="filter-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="filter-item">
+              <a href="" class="filter-link">
+                <div class="filter-images">
+                  <img
+                    src="./images/k-6.jpg"
+                    alt="Приложение"
+                    width="370"
+                    class="filter-img"
+                  />
+                  <div class="filter-overlay">
+                    <p class="filter-images-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="filter-container">
+                  <h2 class="filter-title">Inspiration has no Borders</h2>
+                  <p class="filter-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="filter-item">
+              <a href="" class="filter-link">
+                <div class="filter-images">
+                  <img
+                    src="./images/k-7.jpg"
+                    alt="Дизайн"
+                    width="370"
+                    class="filter-img"
+                  />
+                  <div class="filter-overlay">
+                    <p class="filter-images-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="filter-container">
+                  <h2 class="filter-title">Издание Limited Edition</h2>
+                  <p class="filter-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="filter-item">
+              <a href="" class="filter-link">
+                <div class="filter-images">
+                  <img
+                    src="./images/k-8.jpg"
+                    alt="Маркетинг"
+                    width="370"
+                    class="filter-img"
+                  />
+                  <div class="filter-overlay">
+                    <p class="filter-images-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="filter-container">
+                  <h2 class="filter-title">Проект LAB</h2>
+                  <p class="filter-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="filter-item">
+              <a href="" class="filter-link">
+                <div class="filter-images">
+                  <img
+                    src="./images/k-9.jpg"
+                    alt="Приложение"
+                    width="370"
+                    class="filter-img"
+                  />
+                  <div class="filter-overlay">
+                    <p class="filter-images-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="filter-container">
+                  <h2 class="filter-title">Growing Business</h2>
+                  <p class="filter-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!----------------- footer ----------------->
+      <footer class="footer">
+      <div class="container footer__container">
+        <div class="first-footer">
+          <a href="" class="logo"
+            >Web<span class="logo__light">Studio</span>
+          </a>
+
+          <address class="address">
+            <ul class="address-list list">
+              <li class="address-item">
+                <a
+                  href="https://goo.gl/maps/rnDaSSkSqu99BaFW7"
+                  class="address-maps address-general"
+                  >Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  target="_blank"
+                  rel="noopener noindex nofollow"
+                  class="address-link address-general"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-item">
+                <a
+                  href="tel:+380961111111"
+                  target="_blank"
+                  rel="noopener noindex nofollow"
+                  class="address-link address-general"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="second-footer">
+          <h2 class="title-icon">присоединяйтесь</h2>
+          <ul class="footer-list-icon list">
+            <li class="footer-list-item">
+              <a href="" class="footer-link-icon">
+                <svg class="footer-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a href="" class="footer-link-icon">
+                <svg class="footer-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a href="" class="footer-link-icon">
+                <svg class="footer-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a href="" class="footer-link-icon">
+                <svg class="footer-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="third-footer">
+          <h2 class="footer-label">Подпишитесь на рассылку</h2>
+
+          <form class="footer-btn-form">
+            <input class="footer-input" type="email" placeholder="E-mail" />
+
+            <button class="button footer-button" type="button">Подписаться</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

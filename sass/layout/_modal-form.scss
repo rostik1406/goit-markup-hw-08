@@ -1,0 +1,149 @@
+.modal-title {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.modal-form {
+  display: block;
+  width: 448px;
+  margin: 0 auto;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+
+.modal-container {
+  position: relative;
+
+  margin-bottom: 10px;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+
+  padding: 12px 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.modal-form-svg {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+
+.modal-container:focus-within .modal-form-svg {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.form-textarea {
+  resize: none;
+
+  width: 100%;
+  height: 120px;
+
+  margin-bottom: 20px;
+  padding-top: 10px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+/* -----------------checkbox-------------- */
+.checkbox-h {
+  --webkit-appearance: none;
+  --moz-appearance: none;
+  appearance: none;
+  &:focus + .icon {
+    border-color: var(--accent-color);
+    background-image: url(../images/icon\ check1.svg);
+    border-style: contain;
+    background-origin: border-box;
+  }
+}
+
+.label-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+
+  margin-right: 9px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+}
+
+.svg-checkbox {
+  width: 16px;
+  height: 15px;
+
+  border-radius: 1px solid var(--title-text-color);
+}
+
+.span-checkbox {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.link-checkbox {
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--accent-color);
+}
+
+/* -----------------button-submit----------------- */
+.button-submit {
+  display: flex;
+
+  margin: 0 auto;
+}

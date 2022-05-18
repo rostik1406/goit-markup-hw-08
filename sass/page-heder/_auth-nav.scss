@@ -1,0 +1,50 @@
+.auth-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.auth-nav__item {
+  margin-left: 50px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.auth-nav__link {
+  display: flex;
+  align-items: center;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primary-text-color);
+  fill: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
+
+.auth-nav__envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.auth-nav__smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}

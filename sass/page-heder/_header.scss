@@ -1,0 +1,14 @@
+.page-header {
+  background-color: var(--text-white-color);
+
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__main {
+  display: flex;
+}
+
+.page-header__nav {
+  display: flex;
+  align-items: center;
+}
