@@ -1,4 +1,8 @@
 .section__novpading-top {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+
   padding-top: 0;
 }
 
