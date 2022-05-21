@@ -262,7 +262,6 @@ p {
 }
 
 .features {
-  outline: 1px solid red;
   text-align: center;
 }
 @media screen and (min-width: 760px) {
