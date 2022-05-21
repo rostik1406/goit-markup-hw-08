@@ -280,7 +280,6 @@ p {
 }
 @media screen and (min-width: 768px) {
   .features__item {
-    align-items: center;
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }
@@ -331,7 +330,7 @@ p {
 .section__novpading-top {
   padding-top: 0;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .section__novpading-top {
     display: none;
   }
