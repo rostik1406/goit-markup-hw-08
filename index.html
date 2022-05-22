@@ -17,18 +17,47 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
-
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- heder -->
     <!-- <header class="page-header">
       <div class="page-header__main container">
         <nav class="page-header__nav">
-          <a href="" class="logo"
-            >Web<span class="logo__dark">Studio</span></a
+          <a href="" class="logo">Web<span class="logo__dark">Studio</span></a>
+
+          <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
           >
-          <ul class="site-nav list">
+            <svg
+              width="40"
+              height="40"
+              aria-label="переключатель мобільного меню"
+            >
+              <use
+                class="mob-button__cross"
+                href="./images/icons.svg#icon-close_40px"
+              ></use>
+              <use
+                class="mob-button__menu"
+                href="./images/icons.svg#icon-menu_40px"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="menu-container mobile-menu">
+            <ul class="menu list">
+              <li><a href="">Студия</a></li>
+              <li><a href="">Портфолио</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </div> -->
+          
+
+          <!-- <ul class="site-nav list">
             <li class="site-nav__item">
               <a href="" class="site-nav__link site-nav__link__current"
                 >Студия</a
@@ -42,10 +71,10 @@
             <li class="site-nav__item">
               <a href="" class="site-nav__link">Контакты</a>
             </li>
-          </ul>
-        </nav>
+          </ul> -->
+        <!-- </nav> -->
 
-        <ul class="auth-nav list">
+        <!-- <ul class="auth-nav list">
           <li class="auth-nav__item">
             <a href="mailto:info@devstudio.com" class="auth-nav__link">
               <svg class="auth-nav__envelope">
@@ -64,14 +93,14 @@
               +38 096 111 11 11
             </a>
           </li>
-        </ul>
-      </div>
+        </ul> -->
+      <!-- </div>
     </header> -->
 
     <!-- main -->
     <main>
       <!-- Блок героя -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">
             Эффективные решения <br />
@@ -82,7 +111,7 @@
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Наші переваги -->
       <section class="section">
@@ -356,7 +385,7 @@
       </section> -->
 
       <!-- Постоянные клиенты -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="customers list">
@@ -404,7 +433,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Футер -->
@@ -575,6 +604,7 @@
     </div> -->
 
     <!-- skript -->
+    <script src="./js/mobile-enu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
