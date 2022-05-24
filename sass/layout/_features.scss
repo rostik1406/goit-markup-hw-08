@@ -1,6 +1,6 @@
 .features {
   text-align: center;
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
 
@@ -52,7 +52,7 @@
   margin-bottom: 10px;
 
   @media screen and (min-width: 768px) {
-    text-align-last: left;
+    text-align: left;
   }
 }
 
@@ -61,6 +61,5 @@
   font-size: 14px;
   line-height: 1.71;
 
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }

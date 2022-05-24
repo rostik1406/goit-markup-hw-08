@@ -1,7 +1,7 @@
 /* -------------------Подпишитесь--------------- */
-.third-footer {
-  margin-left: 93px;
-}
+// .third-footer {
+//   margin-left: 93px;
+// }
 
 .footer-label {
   margin-bottom: 20px;
@@ -15,10 +15,12 @@
 }
 
 .footer-input {
-  width: 358px;
+  // width: 358px;
+  width: 450px;
   height: 50px;
 
-  padding-left: 16px;
+  // padding-left: 16px;
+  margin-bottom: 20px;
 
   color: var(--text-white-color);
   background-color: var(--background-h-f-color);
@@ -28,9 +30,11 @@
 }
 
 .footer-button {
-  display: inline-flex;
+  display: block;
 
-  margin-left: 12px;
+  // margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
 
   &:hover,
   &:focus {

@@ -1,6 +1,12 @@
 .second-footer {
   align-items: center;
-  margin-left: 70px;
+  // margin-left: 70px;
+
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-right: 89px;
+    margin-left: 165px;
+  }
 }
 
 .title-icon {
@@ -17,6 +23,9 @@
 .footer-list-icon {
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+
 }
 
 .footer-list-item {
