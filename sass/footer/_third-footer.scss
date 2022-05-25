@@ -1,12 +1,16 @@
 /* -------------------Подпишитесь--------------- */
 .third-footer {
-  // margin-left: 93px;
   text-align: center;
 
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   justify-self: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align-last: left;
+    margin: 0;
+  }
 }
 
 .footer-label {
@@ -20,12 +24,17 @@
   color: var(--text-white-color);
 }
 
+.footer-btn-form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
 .footer-input {
-  // width: 358px;
   width: 450px;
   height: 50px;
 
-  // padding-left: 16px;
+  padding-left: 16px;
   margin-bottom: 20px;
 
   color: var(--text-white-color);
@@ -33,12 +42,21 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  
+  &:focus {
+    border-color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin: 0;
+    margin-right: 10px;
+  }
 }
 
 .footer-button {
   display: block;
 
-  // margin-left: 12px;
   margin-left: auto;
   margin-right: auto;
 
@@ -52,7 +70,6 @@
     width: 24px;
     height: 24px;
 
-    margin-left: 10px;
 
     background-image: url(../images/envelope-f.svg);
     background-size: contain;

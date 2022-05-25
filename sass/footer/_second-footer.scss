@@ -1,11 +1,16 @@
 .second-footer {
   width: 206px;
-  align-items: center;
-  // margin-left: 70px;
+  margin-left: auto;
+  margin-right: auto;
 
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     margin-right: 89px;
+  }
+
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+      margin-right: 93px;
   }
 }
 

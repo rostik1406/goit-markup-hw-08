@@ -32,6 +32,7 @@ a {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
   margin: 0;
 }
 
@@ -453,7 +454,7 @@ p {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .team__item {
     width: 450px;
     margin-left: auto;
@@ -476,26 +477,26 @@ p {
 }
 
 .team__img {
-  display: inline-block;
+  display: block;
   align-items: center;
   justify-content: center;
 }
 @media screen and (min-width: 480px) {
   .team__img {
-    width: 450px;
-    height: 460px;
+    max-width: 450px;
+    height: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .team__img {
-    width: 354px;
-    height: 374px;
+    max-width: 354px;
+    height: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__img {
-    width: 270px;
-    height: 260px;
+    max-width: 270px;
+    height: auto;
   }
 }
 
@@ -638,14 +639,36 @@ p {
 
 /* стилі до filter */
 .filter-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 767px) {
+  .filter-list {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .filter-item {
-  width: 370px;
-  margin: 15px;
+  width: 450px;
+}
+@media screen and (min-width: 760px) {
+  .filter-item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter-item {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
 }
 
 .filter-link {
@@ -717,15 +740,33 @@ p {
 
 .navigation-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .navigation-list {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation-list {
+    margin-bottom: 50px;
+  }
 }
 
-.navigation-item {
-  margin-left: 8px;
+@media screen and (max-width: 767px) {
+  .navigation-item {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
 }
-.navigation-item:first-child {
-  margin-left: 0;
+@media screen and (min-width: 768px) {
+  .navigation-item {
+    margin-left: 8px;
+  }
+  .navigation-item:first-child {
+    margin-left: 0;
+  }
 }
 
 .navigation-button {
@@ -942,10 +983,13 @@ p {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  text-align: center;
+  align-items: baseline;
   background-color: var(--background-h-f-color);
 }
 
+.footer__container {
+  text-align: center;
+}
 @media screen and (min-width: 768px) {
   .footer__container {
     display: flex;
@@ -955,13 +999,23 @@ p {
 
 .first-footer {
   width: 232px;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .first-footer {
     margin-right: 149px;
     margin-bottom: 60px;
     margin-left: 61px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .first-footer {
+    flex-grow: 1;
+    width: 231px;
+    margin: 0;
+    margin-right: 70px;
   }
 }
 
@@ -1003,12 +1057,19 @@ p {
 
 .second-footer {
   width: 206px;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .second-footer {
     margin-right: 89px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .second-footer {
+    margin: 0;
+    margin-right: 93px;
   }
 }
 
@@ -1066,6 +1127,12 @@ p {
   align-items: center;
   justify-self: center;
 }
+@media screen and (min-width: 1200px) {
+  .third-footer {
+    text-align-last: left;
+    margin: 0;
+  }
+}
 
 .footer-label {
   margin-bottom: 20px;
@@ -1076,15 +1143,32 @@ p {
   color: var(--text-white-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-btn-form {
+    display: flex;
+  }
+}
+
 .footer-input {
   width: 450px;
   height: 50px;
+  padding-left: 16px;
   margin-bottom: 20px;
   color: var(--text-white-color);
   background-color: var(--background-h-f-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+.footer-input:focus {
+  border-color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    width: 358px;
+    margin: 0;
+    margin-right: 10px;
+  }
 }
 
 .footer-button {
@@ -1099,7 +1183,6 @@ p {
   content: "";
   width: 24px;
   height: 24px;
-  margin-left: 10px;
   background-image: url(../images/envelope-f.svg);
   background-size: contain;
 }/*# sourceMappingURL=main.css.map */

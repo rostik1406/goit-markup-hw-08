@@ -1,14 +1,29 @@
 .navigation-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .navigation-item {
-  margin-left: 8px;
-  &:first-child {
-    margin-left: 0;
+  @media screen and (max-width: 767px) {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 8px;
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 
