@@ -151,26 +151,6 @@ p {
   align-items: center;
 }
 
-.menu-toggle {
-  display: inline-flex;
-  margin-left: auto;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.mob-button .mob-button__cross {
-  display: none;
-}
-
-.mob-button.js-open-menu .mob-button__cross {
-  display: block;
-}
-
-.mob-button.js-open-menu .mob-button__menu {
-  display: none;
-}
-
 .menu-container {
   position: fixed;
   top: 0;
@@ -178,9 +158,60 @@ p {
   width: 100vw;
   height: 100vh;
   padding: 30px;
-  background-color: tomato;
-  transform: translateX(100%);
+  background-color: var(--text-white-color);
+  z-index: 111;
+  opacity: 0;
+  transform: translateX(-100%);
   transition: transform 250ms ease-in-out;
+}
+
+.menu-container .is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: var(--title-text-color);
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: var(--accent-color);
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: var(--title-text-color);
+  text-decoration: none;
 }
 
 /* styles do site-nav */
@@ -1148,7 +1179,6 @@ p {
 @media screen and (min-width: 1200px) {
   .footer-btn-form {
     display: flex;
-    width: 450px;
   }
 }
 
@@ -1165,6 +1195,11 @@ p {
 }
 .footer-input:focus {
   border-color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .footer-input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-input {
@@ -1186,6 +1221,7 @@ p {
   content: "";
   width: 24px;
   height: 24px;
-  background-image: url(../images/envelope-f.svg);
+  background-image: url(../../images/envelope-f.svg);
   background-size: contain;
+  background-color: red;
 }/*# sourceMappingURL=main.css.map */

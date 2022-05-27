@@ -27,7 +27,6 @@
 .footer-btn-form {
   @media screen and (min-width: 1200px) {
     display: flex;
-    width: 450px;
   }
 }
 
@@ -46,6 +45,10 @@
   
   &:focus {
     border-color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -72,7 +75,8 @@
     height: 24px;
 
 
-    background-image: url(../images/envelope-f.svg);
+    background-image: url(../../images/envelope-f.svg);
     background-size: contain;
+    background-color: red;
   }
 }
