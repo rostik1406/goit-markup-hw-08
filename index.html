@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+
     <!------------------------- heder ------------------------->
      <header class="page-header">
       <div class="page-header__main container">
@@ -49,7 +50,7 @@
 
           <!-------------------- nav-desctop -------------------->
 
-           <!-- <ul class="site-nav list">
+           <ul class="site-nav list">
             <li class="site-nav__item">
               <a href="" class="site-nav__link site-nav__link__current"
                 >Студия</a
@@ -63,10 +64,10 @@
             <li class="site-nav__item">
               <a href="" class="site-nav__link">Контакты</a>
             </li>
-          </ul> -->
+          </ul>
         </nav>
 
-         <!-- <ul class="auth-nav list">
+         <ul class="auth-nav list">
           <li class="auth-nav__item">
             <a href="mailto:info@devstudio.com" class="auth-nav__link">
               <svg class="auth-nav__envelope">
@@ -84,9 +85,9 @@
 
               +38 096 111 11 11
             </a>
-          </li> -->
-        </ul> 
-      </div>
+          </li>
+        </ul>
+      </div> 
     </header> 
 
     <!-------------------------- main -------------------------->
@@ -598,30 +599,29 @@
     </div>
 
     <!----------------------- menu-button ------------------------>
-      <div class="menu-container js-menu-container is-open" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
-          <svg
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
+<div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
 
-        <ul class="mobile-menu">
-          <li><a href="" class="link">О нас</a></li>
-          <li><a href="" class="link">Работы</a></li>
-          <li><a href="" class="link">Контакты</a></li>
-          <li><a href="" class="link">Карьера</a></li>
-        </ul>
-      </div>
+      <ul class="mobile-menu">
+        <li><a href="" class="link">Студия</a></li>
+        <li><a href="" class="link">Портфолио</a></li>
+        <li><a href="" class="link">Контакты</a></li>
+      </ul>
+    </div>
 
 
     <!-------------------------------- skript --------------------------------->
@@ -629,13 +629,13 @@
     <script src="./js/modal.js"></script>
 
     <!------------- menu ------------->
-    <script
+      <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
 
   </body>
 </html>
