@@ -1,8 +1,15 @@
 ////////////// стилі до списку mobile-menu //////////////
+.mobil-container {
+  padding-left: 15px;
+
+  @media screen and (min-width: 480px) {
+    padding-left: 40px;
+  }
+}
+
 .mobile-menu {
   margin-bottom: 302px;
   padding-top: 48px;
-  padding-left: 40px;
 
   font-weight: 500;
   font-size: 40px;
@@ -29,11 +36,14 @@
   }
 }
 
+.active {
+  color: var(--accent-color);
+}
+
 ///////////// mobile-contacts ////////////////
 .mobile-contacts {
   display: block;
 
-  padding-left: 40px;
   margin-bottom: 64px;
 }
 
@@ -64,26 +74,30 @@
 ///////////// mobile-social ////////////////
 .mobile-social {
   display: flex;
-  padding-left: 40px;
+  width: 100%;
 }
 
 .mobile-social__item {
+  padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   margin-right: 10px;
   &:last-child {
     border-right: 0;
     margin-right: 0;
+    padding: 0;
   }
 }
 
 .mobile-social__link {
-  padding-right: 10px;
-
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.22;
   letter-spacing: 0.02em;
 
   color: var(--accent-color);
+
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+  }
 }

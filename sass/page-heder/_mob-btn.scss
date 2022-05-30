@@ -13,10 +13,8 @@
   border: none;
   border-radius: 50%;
   outline: none;
-}
 
-@media (min-width: 768px) {
-  .menu-toggle {
+  @media (min-width: 768px) {
     display: none;
   }
 }
@@ -36,7 +34,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  // padding: 32px;
+  // padding: 15px;
   background-color: var(--text-white-color);
   z-index: 999;
 
@@ -53,4 +52,8 @@
   top: 16px;
   right: 16px;
   color: var(--title-text-color);
+}
+
+.menu-container {
+  overflow: scroll;
 }
