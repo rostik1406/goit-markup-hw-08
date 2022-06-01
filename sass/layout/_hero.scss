@@ -20,6 +20,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media screen and (min-resolution: 2dppx) {
+    background-image: url(../images/Header-tel-x2.jpg);
+  }
 
   @media screen and (min-width: 768px) {
     padding-top: 200px;
@@ -31,15 +34,29 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero-img-tab.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url(../images/Header-tab-x2.jpg);
+    }
   }
 
-  @media screenand and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero-img-desc.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url(../images/header-desc-x2.jpg);
+    }
   }
 }
 
