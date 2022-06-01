@@ -1,14 +1,8 @@
 /* -------------------Подпишитесь--------------- */
 .third-footer {
-  text-align: center;
-
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  justify-self: center;
+  margin-top: 60px;
 
   @media screen and (min-width: 1200px) {
-    text-align-last: left;
     margin: 0;
   }
 }
@@ -54,7 +48,7 @@
   @media screen and (min-width: 1200px) {
     width: 358px;
     margin: 0;
-    margin-right: 10px;
+    margin-right: 12px;
   }
 }
 

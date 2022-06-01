@@ -2,10 +2,6 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (max-width: 767px) {
-    margin-bottom: 30px;
-  }
-
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -15,8 +11,10 @@
 }
 
 .filter-item {
-  max-width: 370px;
   margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media screen and (min-width: 760px) {
     width: calc((100% - 2 * 30px) / 2);

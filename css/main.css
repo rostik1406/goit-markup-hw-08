@@ -78,6 +78,12 @@ p {
   line-height: 1.19;
   color: var(--accent-color);
 }
+@media screen and (max-width: 767px) {
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 
 .logo__dark {
   color: var(--title-text-color);
@@ -104,13 +110,14 @@ p {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .section__title {
     font-size: 36px;
     line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 
@@ -448,7 +455,7 @@ p {
 }
 @media screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/Header-tel-x2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-tel-x2.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -463,7 +470,7 @@ p {
 }
 @media screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/Header-tab-x2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-tab-x2.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -476,7 +483,7 @@ p {
 }
 @media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/header-desc-x2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-desc-x2.jpg);
   }
 }
 
@@ -646,13 +653,13 @@ p {
 }
 @media screen and (min-width: 768px) {
   .team__item {
-    width: calc(100% - 60px)/2;
+    width: calc((100% - 60px) / 2);
     margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__item {
-    width: calc(100% - 120px)/4;
+    width: calc((100% - 120px) / 4);
   }
 }
 
@@ -802,11 +809,6 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 767px) {
-  .filter-list {
-    margin-bottom: 30px;
-  }
-}
 @media screen and (min-width: 768px) {
   .filter-list {
     display: flex;
@@ -816,8 +818,10 @@ p {
 }
 
 .filter-item {
-  max-width: 370px;
   margin-bottom: 30px;
+}
+.filter-item:last-child {
+  margin-bottom: 0;
 }
 @media screen and (min-width: 760px) {
   .filter-item {
@@ -908,7 +912,7 @@ p {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .navigation-list {
@@ -921,10 +925,17 @@ p {
   }
 }
 
+.navigation-item {
+  margin: 0;
+}
 @media screen and (max-width: 767px) {
   .navigation-item {
     margin-right: 8px;
     margin-bottom: 15px;
+  }
+  .navigation-item:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -934,6 +945,10 @@ p {
   .navigation-item:first-child {
     margin-left: 0;
   }
+}
+
+.m-bottom {
+  margin-bottom: 0;
 }
 
 .navigation-button {
@@ -1186,28 +1201,14 @@ p {
   .footer__container {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-.first-footer {
-  width: 232px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  .first-footer {
-    margin-right: 149px;
-    margin-bottom: 60px;
-    margin-left: 61px;
+    align-items: baseline;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
-  .first-footer {
-    flex-grow: 1;
-    width: 231px;
-    margin: 0;
-    margin-right: 70px;
+  .footer__container {
+    text-align: left;
+    align-items: baseline;
   }
 }
 
@@ -1248,20 +1249,11 @@ p {
 }
 
 .second-footer {
-  width: 206px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
+  margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .second-footer {
-    margin-right: 89px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .second-footer {
     margin: 0;
-    margin-right: 93px;
   }
 }
 
@@ -1313,15 +1305,10 @@ p {
 
 /* -------------------Подпишитесь--------------- */
 .third-footer {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  justify-self: center;
+  margin-top: 60px;
 }
 @media screen and (min-width: 1200px) {
   .third-footer {
-    text-align-last: left;
     margin: 0;
   }
 }
@@ -1364,7 +1351,7 @@ p {
   .footer-input {
     width: 358px;
     margin: 0;
-    margin-right: 10px;
+    margin-right: 12px;
   }
 }
 

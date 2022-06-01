@@ -12,27 +12,13 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-.first-footer {
-  width: 232px;
-  
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
-
-  @media screen and (min-width: 768px) {
-    margin-right: 149px;
-    margin-bottom: 60px;
-    margin-left: 61px;
+    align-items: baseline;
+    justify-content: space-around;
   }
 
   @media screen and (min-width: 1200px) {
-    flex-grow: 1;
-    width: 231px;
-    margin: 0;
-    margin-right: 70px;
+    text-align: left;
+    align-items: baseline;
   }
 }
 
