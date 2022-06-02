@@ -817,13 +817,15 @@ p {
   }
 }
 
-.filter-item {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .filter-item {
+    margin-bottom: 30px;
+  }
+  .filter-item:last-child {
+    margin-bottom: 0;
+  }
 }
-.filter-item:last-child {
-  margin-bottom: 0;
-}
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   .filter-item {
     width: calc((100% - 60px) / 2);
     margin: 15px;
